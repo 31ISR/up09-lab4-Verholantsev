@@ -23,4 +23,5 @@ urlpatterns = [
     path('about/', views.about),
     path('', views.home),
     path('posts/', include('posts.urls')),
+    path('communities/', include('communities.urls')),
 ]

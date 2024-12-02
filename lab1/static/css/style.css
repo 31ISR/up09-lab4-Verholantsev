@@ -5,16 +5,40 @@
 }
 
 body {
-    height: 100vh; /* Высота на всю высоту экрана */
-    margin: 0; /* Убираем отступы по умолчанию */
-    display: flex; /* Используем flexbox для центрирования */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
-    background-color: #1a1a1a; /* Темный фон */
-    color: #ffffff; /* Светлый текст */
-    font-size: 3rem; /* Размер текста 3rem */
+    height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #1a1a1a;
+    color: #ffffff; 
+    font-size: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+main{
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover{
+    opacity: .85;
 }
 
 h1, p {
-    text-align: center; /* Выравнивание текста по центру */
+    text-align: center;
+}
+
+li{
+    display: ;
+    align-items: left;
+    justify-content: left;
 }
