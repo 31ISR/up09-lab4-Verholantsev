@@ -1,0 +1,52 @@
+*{
+    margin: 0;               
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #1a1a1a;
+    color: #ff0000; 
+    font-size: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+main{
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover{
+    opacity: .85;
+}
+
+h1, p {
+    text-align: center;
+}
+
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    
+}
+
+nav{
+    display: flex;
+}
