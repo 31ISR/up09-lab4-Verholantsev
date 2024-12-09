@@ -5,9 +5,18 @@
 {% endblock %}
 
 {% block content %}
-    <h1>посты</h1><br>
 
-    <div class="post1" h2>-Рост цен на бензин, новинки из КНР и крах Volkswagen.</h2><br></div>
-    <div class="post2" h2>-Вы не поверите, но нештрафуемый порог скорости в 20 км/ч готовы отменить</h2><br></div>
-    <div class="post3" h2>-Эти нарушения вас разорят. 5 самых «дорогих» штрафов в России</h2><br></div>
+<section>
+    
+{% for post in posts %}
+
+<article class="post">
+    <h1>
+        <a href="{% url 'posts:page' slug=post.slug %}"> {{ post.title }} </h1>
+    
+    <h2>{{post.date}}</h2>
+    <h2>{{post.body}}</h2>
+</article>
+{% endfor %}
+</section>
 {% endblock %}

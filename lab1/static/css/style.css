@@ -21,7 +21,6 @@ body {
 main{
     flex-grow: 1;
     display: grid;
-    place-content: center;
 }
 
 a{
@@ -34,6 +33,8 @@ a:hover{
 }
 
 h1, p {
+    color:rgb(101, 101, 196);
+    display: flex;
     text-align: center;
 }
 
@@ -52,7 +53,8 @@ nav{
 }
 
 fieldset{
-    position: ;
-    justify-content: left;
-    align-items: left;
+    background-color: aquamarine;
+    text-align: center;
+    display: inline;
 }
+

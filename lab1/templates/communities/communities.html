@@ -1,13 +1,14 @@
-{% extends 'layout.html' %}
-
-{% block title %}
-    Главная страница
-{% endblock %}
-
+{% extends 'layout.html' %} {% block title %} Communities {% endblock %}
 {% block content %}
-    <h1>Группа</h1>
+<section>
+    <h1>Communities</h1>
 
-<div class="group">
-    <fieldset>Штрафы</fieldset>
-    <fieldset>Рост Цен</fieldset>
+    {% for post in communities %}
+    <article class="community">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date }}</p>
+        <p>{{ post.body }}</p>
+    </article>
+    {% endfor %}
+</section>
 {% endblock %}
