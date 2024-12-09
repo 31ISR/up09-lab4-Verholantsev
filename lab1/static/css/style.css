@@ -10,8 +10,8 @@ body {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    background-color: #1a1a1a;
-    color: #ff0000; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); 
     font-size: 3rem;
     min-height: 100vh;
     display: flex;
@@ -26,7 +26,7 @@ main{
 
 a{
     text-decoration: none;
-    color: #81dbb8;
+    color: #000000;
 }
 
 a:hover{
@@ -49,4 +49,10 @@ li{
 
 nav{
     display: flex;
+}
+
+fieldset{
+    position: ;
+    justify-content: left;
+    align-items: left;
 }
