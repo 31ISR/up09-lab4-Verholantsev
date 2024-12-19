@@ -1,0 +1,60 @@
+*{
+    margin: 0;               
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); 
+    font-size: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+main{
+    flex-grow: 1;
+    display: grid;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    opacity: .85;
+}
+
+h1, p {
+    color:rgb(101, 101, 196);
+    display: flex;
+    text-align: center;
+}
+
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    
+}
+
+nav{
+    display: flex;
+}
+
+fieldset{
+    background-color: aquamarine;
+    text-align: center;
+    display: inline;
+}
+

@@ -4,14 +4,15 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 # Create your views here.
 def register_view(request):
-    if request.method == "POST":
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect("posts:list")
-    else:
-        form = UserCreationForm()
-    return render(request, "users/register.html", { "form": form })
+    # if request.method == "POST":
+    #     form = UserCreationForm(request.POST)
+    #     if form.is_valid():
+    #         form.save()
+    #         return redirect("posts:list")
+    # else:
+    #     form = UserCreationForm()
+    # return render(request, "users/register.html", { "form": form })
+    return render(request, "users/register.html")
 
 def login_view(request):
     if form.is_valid(): 
